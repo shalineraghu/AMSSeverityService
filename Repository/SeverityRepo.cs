@@ -29,7 +29,8 @@ namespace AuditSeverityModule.Repository
             {
                 
                 List<AuditBenchmark> listFromAuditBenchmark = new List<AuditBenchmark>(); //
-                HttpResponseMessage response = client.GetAsync("https://amsbenchmarkservice.azurewebsites.net/api" + "/AuditBenchmark").Result;
+                HttpResponseMessage response = client.GetAsync("http://52.153.124.163/api" + "/AuditBenchmark").Result;
+                //HttpResponseMessage response = client.GetAsync("https://amsbenchmarkservice.azurewebsites.net/api" + "/AuditBenchmark").Result;
                 //HttpResponseMessage response = client.GetAsync("https://localhost:44397/api" + "/AuditBenchmark").Result; //client.BaseAddress
                 if (response.IsSuccessStatusCode)
                 {
